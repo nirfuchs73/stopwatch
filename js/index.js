@@ -62,6 +62,7 @@ function incrementTime() {
 
 function secondsToTime(seconds) {
     var hrs = Math.floor(seconds / 60 / 60);
+    seconds = seconds - (hrs * 60 * 60);
     var mins = Math.floor(seconds / 60);
     var secs = Math.floor(seconds % 60);
     if (hrs < 10) {
